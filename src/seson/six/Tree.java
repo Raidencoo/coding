@@ -3,6 +3,7 @@ package seson.six;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Tree {
 
@@ -193,6 +194,10 @@ public class Tree {
 
 
     public static void main(String[] args) {
+
+        ConcurrentHashMap<Object, Object> hashMap = new ConcurrentHashMap<>();
+        hashMap.put(1,null);
+
         Tree tree = new Tree(1);
         tree.left=new Tree(2);
         tree.right=new Tree(3);
